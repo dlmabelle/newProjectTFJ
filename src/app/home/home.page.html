@@ -1,18 +1,43 @@
 <ion-header>
-  <ion-navbar>
-    <ion-item lines="none">
-      <ion-button color="light" slot="start" fill="clear">Acceuil</ion-button>
-    </ion-item>
-    
-    <ion-item lines="none">
-      <ion-button color="light" slot="end" fill="clear">log in</ion-button>
+  <ion-navbar class="ion-margin-bottom">
+    <ion-item >
+      <ion-button color="light" slot="start" fill="clear" >Acceuil</ion-button>
     </ion-item>
   </ion-navbar>
 </ion-header>
+<ion-content class="ion-padding">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+      <ion-text color="primary">
+      <h1>
+        Bienvenue dans le portail des employés.
+      </h1>
+                </ion-text>
+      </ion-col>
+      <ion-col size="12"> <ion-item routerLink="/login">
+        <ion-button color="primary" slot="end" fill="clear">log in <ion-icon name="log-in-outline"></ion-icon></ion-button>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home"> 
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Accueil</ion-label>
+      <ion-badge>6</ion-badge>
+    </ion-tab-button>
+<ion-tab-button tab="people">
+      <ion-icon name="people"></ion-icon>
+      <ion-label>Employés</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="speakers">
+      <ion-icon name="person-circle"></ion-icon>
+      <ion-label>Profil</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
 
-<ion-footer collapse="fade">
-  <ion-toolbar>
-    <ion-title>Copyrigt TFJ</ion-title>
-  </ion-toolbar>
-</ion-footer>
+</ion-content>
 

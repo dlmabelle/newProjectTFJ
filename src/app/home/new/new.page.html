@@ -1,9 +1,38 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>new</ion-title>
-  </ion-toolbar>
+  <ion-navbar>
+    <ion-item lines="none">
+      <ion-button color="light" slot="start" fill="clear">Acceuil</ion-button>
+    </ion-item>
+    
+    <ion-item routerLink="/login">
+      <ion-button color="light" slot="end" fill="clear">log in <ion-icon name="log-in-outline"></ion-icon></ion-button>
+    </ion-item>
+  </ion-navbar>
 </ion-header>
 
 <ion-content>
+  <div class="background">
+    <ion-item>
+      <ion-label color="light">Nom :</ion-label>
+      <ion-input color="light" placeholder="Nom complet"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="light">Prénom :</ion-label>
+      <ion-input color="light" type="password" placeholder="Prénom"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="light">Email :</ion-label>
+      <ion-input color="light" type="mail" placeholder="Adresse Email"></ion-input>
+    </ion-item>
+
+    <ion-button color="light" expand="block" shape="round" fill="outline">Validate</ion-button>
+    <ion-button color="light" expand="block" shape="round">Cancel</ion-button>
+  </div>
 
 </ion-content>
+<ion-footer collapse="fade">
+  <ion-toolbar>
+    <ion-title>Copyrigt TFJ</ion-title>
+  </ion-toolbar>

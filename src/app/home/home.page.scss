@@ -1,8 +1,19 @@
 ion-header{
-  --ion-background-color:#FC7D41;
+   --ion-background-color: linear-gradient( 0.25turn,#4854e0, #4c8dff);
 }
 
-ion-footer{
-  --ion-background-color:#FC7D41;
+ion-col {
+  text-align: center;
 }
+ion-grid {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  height: 100%;
+}
+h1{
+  font-weight: 600;
+}
+
 
