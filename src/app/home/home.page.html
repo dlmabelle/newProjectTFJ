@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar class="ion-margin-bottom">
     <ion-item >
-      <ion-button color="light" slot="start" fill="clear" >Acceuil</ion-button>
+      <ion-button color="light" slot="start" fill="clear" >Home</ion-button>
     </ion-item>
   </ion-navbar>
 </ion-header>
@@ -15,8 +15,8 @@
       </h1>
                 </ion-text>
       </ion-col>
-      <ion-col size="12"> <ion-item routerLink="/login">
-        <ion-button color="primary" slot="end" fill="clear">log in <ion-icon name="log-in-outline"></ion-icon></ion-button>
+      <ion-col size="12"> <ion-item routerLink="/login" lines="none" >
+        <ion-button color="primary" slot="end" fill="clear">  log in <ion-icon name="log-in-outline"></ion-icon></ion-button>
       </ion-item>
     </ion-col>
   </ion-row>
@@ -25,12 +25,12 @@
   <ion-tab-bar slot="bottom">
     <ion-tab-button tab="home"> 
       <ion-icon name="home"></ion-icon>
-      <ion-label>Accueil</ion-label>
+      <ion-label>Home</ion-label>
       <ion-badge>6</ion-badge>
     </ion-tab-button>
 <ion-tab-button tab="people">
       <ion-icon name="people"></ion-icon>
-      <ion-label>Employés</ion-label>
+      <ion-label>Employees</ion-label>
     </ion-tab-button>
     <ion-tab-button tab="speakers">
       <ion-icon name="person-circle"></ion-icon>

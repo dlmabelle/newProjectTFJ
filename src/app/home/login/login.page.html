@@ -22,8 +22,8 @@
       <ion-item lines="none">
         <ion-button color="primary" slot="end" fill="clear">Mot de passe oublié ?</ion-button>
       </ion-item>
-     <ion-item routerLink="/listing-page">
-        <ion-button  line="none" color="primary"  shape="round" fill="outline" slot="end">Connexion</ion-button>
+     <ion-item routerLink="/listing-page" lines="none">
+        <ion-button  line="none" color="primary"  shape="round" fill="outline" slot="end" (click)="login()">Login</ion-button>
      </ion-item> 
     </div>
   </ion-text>
@@ -31,12 +31,12 @@
     <ion-tab-bar slot="bottom">
       <ion-tab-button tab="home"> 
         <ion-icon name="home"></ion-icon>
-        <ion-label>Accueil</ion-label>
+        <ion-label>Home</ion-label>
         <ion-badge>6</ion-badge>
       </ion-tab-button>
   <ion-tab-button tab="people">
         <ion-icon name="people"></ion-icon>
-        <ion-label>Employés</ion-label>
+        <ion-label>Employees</ion-label>
       </ion-tab-button>
       <ion-tab-button tab="speakers">
         <ion-icon name="person-circle"></ion-icon>
